@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           source: "images/*.png, images/*.jpg"
-          target: "/home/github/website/images"
+          target: "/home/github/website"
           overwrite: true
 
   push_html:
