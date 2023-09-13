@@ -1,62 +1,80 @@
 import {
-  HeroAvatar,
-  HeroSocial,
-  Section,
+    HeroAvatar,
+    HeroSocial,
+    Section,
 } from 'astro-boilerplate-components';
 import {GradientText} from "@/components/GradientText";
+import {DutyCard} from "@/components/DutyCard";
 
 const Hero = () => (
-  <Section>
-    <HeroAvatar
-      title={
-        <>
-          Аллоха, меня зовут Толя    <GradientText>OverrideTech</GradientText> 👋
-        </>
-      }
-      description={
-        <>
-          Я ментор по мешанию джейсонов на джаве.
-          Помогаю своим студентам ворваться в бэкенд с ноги.
-        </>
-      }
-      avatar={
-        <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
-          alt="Avatar image"
-          loading="lazy"
+    <Section>
+        <HeroAvatar
+            title={
+                <>
+                    Аллоха, меня зовут Толя <GradientText>OverrideTech</GradientText> 👋
+                </>
+            }
+            description={
+                <>
+                    Я ментор по мешанию джейсонов на джаве.
+                    Помогаю своим студентам ворваться в бэкенд с ноги.
+
+
+                    <DutyCard title="Менторинг с нуля до модного девелопера" description=
+                        {
+                            <>По времени - до года, стоимость - 17% от зарплаты после трудоустройства в течение 24
+                                месяцев.
+                                <br/> Формат доступен не всегда, количество студентов одновременно ограничено
+                            </>
+                        }
+                    />
+                    <DutyCard title="Помощь с трудоустройством" description="Подготовка к собеседованиям, помощь с созданием сочного резюме и улучшением оффера.
+            Цена - это разница между тем, что ты получаешь сейчас и тем, что сможешь получить после
+            подготовки
+            со мной. Формат доступен всегда, но нужно обладать минимальным набором тех скилов. "/>
+
+                </>
+
+            }
+            avatar={
+                <img
+                    className="h-80 w-64"
+                    src="/assets/images/avatarMentor.png"
+                    alt="Avatar image"
+                    loading="lazy"
+                />
+            }
+            socialButtons={
+                <>
+                    <a href="https://t.me/Marandyuk_Anatolii">
+                        <HeroSocial
+                            src="/assets/images/tg-icon.png"
+                            alt="Telegram icon"
+                        />
+                    </a>
+                    <a href="https://github.com/nekromant322">
+                        <HeroSocial
+                            src="/assets/images/github-icon4.png"
+                            alt="Github icon"
+                        />
+                    </a>
+                    <a href="https://www.twitch.tv/overrideTech">
+                        <HeroSocial
+                            src="/assets/images/twitch-icon.png"
+                            alt="Twitch icon"
+                        />
+                    </a>
+                    <a href="https://boosty.to/overridetech">
+                        <HeroSocial
+                            src="/assets/images/boosty-icon.png"
+                            alt="Twitch icon"
+                        />
+                    </a>
+
+                </>
+            }
         />
-      }
-      socialButtons={
-        <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
-          </a>
-        </>
-      }
-    />
-  </Section>
+    </Section>
 );
 
-export { Hero };
+export {Hero};
