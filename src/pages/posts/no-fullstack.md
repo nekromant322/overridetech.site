@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: Ентерпрайзу не нужны фулстек разработчики
 description: Большие компании в состоянии нанять людей с разными техническими компетенциями для выполнения разных задач
-pubDate: 2020-02-02T00:00:00Z
+pubDate: 2022-11-04T00:00:00Z
 imgSrc: '/assets/images/image-post5.jpeg'
 imgAlt: 'Image post 5'
 ---
